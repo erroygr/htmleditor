@@ -1,0 +1,20 @@
+.background{
+    -fx-background-color: #FFE4E1;
+}
+
+.button {
+    -fx-border-color: #696969;
+    -fx-border-width: 2;
+    -fx-background-radius: 2;
+    -fx-background-color: #696969;
+    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: #FAEBD7;
+}
+
+.button:hover{
+    -fx-background-color: #2F4F4F;
+    -fx-border-color: #2F4F4F;
+}
+
+

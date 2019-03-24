@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.web.HTMLEditor?>
+<?import javafx.scene.web.WebView?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="1194.0"
+      stylesheets="@../css/StyleInterface.css"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HTMLEditor fx:id="htmledit" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="9.0" layoutY="59.0" prefHeight="246.0" prefWidth="718.0" />
+      <Button fx:id="saveHTMLfile" layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#SaveHtml" prefHeight="35.0" prefWidth="114.0" text="Сохранить" />
+      <Button fx:id="loadToPaneWeb" layoutX="268.0" layoutY="14.0" mnemonicParsing="false" onAction="#LoadHtml" prefHeight="35.0" prefWidth="287.0" text="Загрузить файл в web отображение" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button fx:id="getCodeWeb" layoutX="597.0" layoutY="14.0" mnemonicParsing="false" onAction="#getCodeWeb" prefHeight="33.0" prefWidth="197.0" text="Получить код страницы" />
+      <TextArea fx:id="textAreaPAnel" layoutX="742.0" layoutY="60.0" prefHeight="246.0" prefWidth="440.0" />
+      <WebView fx:id="webView" layoutX="10.0" layoutY="315.0" prefHeight="203.0" prefWidth="1172.0" />
+      <Button fx:id="webViewPanelLoadFile" layoutX="833.0" layoutY="14.0" mnemonicParsing="false" onAction="#WebEng" prefHeight="35.0" prefWidth="235.0" text="Показать как будет в Web" />
+      <Button fx:id="loadFileEditor" layoutX="150.0" layoutY="14.0" mnemonicParsing="false" onAction="#LoadFileText" prefHeight="35.0" prefWidth="95.0" text="Загрузить" />
+   </children>
+</Pane>
