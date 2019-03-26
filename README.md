@@ -2,6 +2,7 @@
 html Editor for laboratory work. Able to create html extension files. Load them into the program. Show how it will look in the browser.///
  HTML редактор для лабораторной. Умеет создавать файлы расширения html. Загружать их в программу. Показывать как будет выглядеть в браузере.
 
+При запуске загружается тестовый файл из папки htmlTEST.
 
 1)  Кнопка Сохранить - сохранит вееденный текст и его стиль ( шрифт, написание, цвет и тд.)
 2)  Загрузить - появится окно для выбора файла формата .html, для дальнейшей работы с ним
@@ -12,6 +13,7 @@ html Editor for laboratory work. Able to create html extension files. Load them 
                   напомнителя- введнной информации пользователем
                   атрибуты- стили написания текста 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+At startup, the test file is loaded from the htmlTEST folder.
 
 1) Save Button-saves the text and its style (font, writing, color, etc.).)
 2) upload - a window will appear to select the file format .html, for further work with it
