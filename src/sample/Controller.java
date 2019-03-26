@@ -10,6 +10,8 @@ import javafx.stage.FileChooser;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -28,24 +30,15 @@ public class Controller {
 
     public WebEngine TEXT_TEST;
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        String fileName = "./src/"+ this.getClass().getPackage().getName().replaceAll(".","/") + "/htmlTEST/htmlTEST.html";
         TEXT_TEST = webView.getEngine();
-    String INITIAL_TEXT = "<html><body>Lorem ipsum dolor sit "
-                + "amet, consectetur adipiscing elit. Nam tortor felis, pulvinar "
-                + "in scelerisque cursus, pulvinar at ante. Nulla consequat"
-                + "congue lectus in sodales. Nullam eu est a felis ornare "
-                + "bibendum et nec tellus. Vivamus non metus tempus augue auctor "
-                + "ornare. Duis pulvinar justo ac purus adipiscing pulvinar. "
-                + "Integer congue faucibus dapibus. Integer id nisl ut elit "
-                + "aliquam sagittis gravida eu dolor. Etiam sit amet ipsum "
-                + "sem.</body></html>";
+    String INITIAL_TEXT = readUsingFiles(fileName);
         htmledit.setHtmlText(INITIAL_TEXT);
-        htmledit.setStyle(
-                "-fx-font: 12 cambria;"
-                        + "-fx-border-color: brown; "
-                        + "-fx-border-style: dotted;"
-                        + "-fx-border-width: 2;"
-        );
+    }
+
+    private static String readUsingFiles(String fileName) throws IOException {
+        return new String(Files.readAllBytes(Paths.get(fileName)));
     }
 
     public void WebEng(ActionEvent event) {
