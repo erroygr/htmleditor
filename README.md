@@ -13,6 +13,7 @@ html Editor for laboratory work. Able to create html extension files. Load them 
                   напомнителя- введнной информации пользователем
                   атрибуты- стили написания текста 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 At startup, the test file is loaded from the htmlTEST folder.
 
 1) Save Button-saves the text and its style (font, writing, color, etc.).)
