@@ -2,7 +2,7 @@
 html Editor for laboratory work. Able to create html extension files. Load them into the program. Show how it will look in the browser.///
  HTML редактор для лабораторной. Умеет создавать файлы расширения html. Загружать их в программу. Показывать как будет выглядеть в браузере.
  
- ![]([url=https://radikal.ru][img]https://a.radikal.ru/a32/1903/4e/10ff9d9712ed.png[/img][/url])
+ ![](https://a.radikal.ru/a32/1903/4e/10ff9d9712ed.png)
 
 При запуске загружается тестовый файл из папки htmlTEST.
 
